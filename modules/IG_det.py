@@ -1270,8 +1270,14 @@ def run_detector_conductance(
             if mode == "fixed_query"
             else f"Fixed ROI seed box, class={target_class_name}"
         )
-        overlay_title = (
-            f"Total conductance, layer={layer_name}, mode={mode}, class={target_class_name}, abs_error={abs_error:.6g}"
+        overlay_title = "\n".join(
+            [
+                "Total conductance",
+                f"layer={layer_name}",
+                f"mode={mode}",
+                f"class={target_class_name}",
+                f"abs_error={abs_error:.6g}",
+            ]
         )
 
         if verbose:

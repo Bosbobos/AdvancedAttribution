@@ -18,6 +18,12 @@ from PIL import Image
 from ultralytics import YOLO
 from torch.func import jvp
 
+from modules.baseline_utils import (
+    DEFAULT_BLUR_SIGMA,
+    build_image_baseline,
+    baseline_title_fragment,
+)
+
 torch.set_grad_enabled(True)
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.mps.is_available() else "cpu")
@@ -478,6 +484,9 @@ def run_conductance_pipeline(
     image_path,
     layer_name=DEFAULT_LAYER_NAME,
     n_steps=64,
+    baseline_mode="zero",
+    baseline_rgb=None,
+    baseline_blur_sigma=DEFAULT_BLUR_SIGMA,
     top_n=5,
     fd_eps=1e-3,
     clear_every=8,
@@ -488,7 +497,13 @@ def run_conductance_pipeline(
 ):
     """Execute the full conductance workflow and return metrics plus intermediate tensors."""
     x, img_np = load_image(image_path)
-    x0 = black_baseline_like(x)
+    x0, baseline_info = build_image_baseline(
+        x,
+        img_np,
+        mode=baseline_mode,
+        baseline_rgb=baseline_rgb,
+        blur_sigma=baseline_blur_sigma,
+    )
 
     hook = LayerHook(model, layer_name)
 
@@ -537,7 +552,19 @@ def run_conductance_pipeline(
             fx0 = float(logits_x0[0, target_class].item())
             abs_error = abs((fx - fx0) - float(layer_score.item()))
 
-        total_plot_title = f"Total conductance, layer={layer_name}, class={target_name}, abs_error={abs_error:.6g}"
+        total_plot_title = "\n".join(
+            [
+                "Total conductance",
+                f"layer={layer_name}",
+                f"class={target_name}",
+                baseline_title_fragment(
+                    baseline_info["baseline_mode"],
+                    baseline_rgb=baseline_info["baseline_rgb"],
+                    blur_sigma=baseline_info["baseline_blur_sigma"],
+                ),
+                f"abs_error={abs_error:.6g}",
+            ]
+        )
 
         if verbose:
             print("image:", image_path)
@@ -545,6 +572,14 @@ def run_conductance_pipeline(
             print("target class:", target_class, target_name)
             print("target logit:", target_logit)
             print("target softmax prob:", target_prob)
+            print(
+                "baseline:",
+                baseline_title_fragment(
+                    baseline_info["baseline_mode"],
+                    baseline_rgb=baseline_info["baseline_rgb"],
+                    blur_sigma=baseline_info["baseline_blur_sigma"],
+                ),
+            )
             print("layer activation shape:", tuple(act.shape))
             print("cond tensor shape:", tuple(cond_tensor.shape))
             print("filter_scores shape:", tuple(filter_scores.shape))
@@ -595,6 +630,9 @@ def run_conductance_pipeline(
             "fx": fx,
             "fx0": fx0,
             "abs_error": abs_error,
+            "baseline_mode": baseline_info["baseline_mode"],
+            "baseline_rgb": baseline_info["baseline_rgb"],
+            "baseline_blur_sigma": baseline_info["baseline_blur_sigma"],
             "image_np": img_np,
             "total_plot_title": total_plot_title,
         }

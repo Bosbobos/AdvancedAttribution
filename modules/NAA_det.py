@@ -973,8 +973,14 @@ def run_attribution_pipeline(
             abs_error = abs((fx - fx0) - float(layer_score.item()))
 
         box_title = f"Fixed ROI seed box, class={target_class_name}"
-        overlay_title = (
-            f"Total attribution, layer={layer_name}, mode={mode}, class={target_class_name}, abs_error={abs_error:.6g}"
+        overlay_title = "\n".join(
+            [
+                "Total attribution",
+                f"layer={layer_name}",
+                f"mode={mode}",
+                f"class={target_class_name}",
+                f"abs_error={abs_error:.6g}",
+            ]
         )
 
         if verbose:
