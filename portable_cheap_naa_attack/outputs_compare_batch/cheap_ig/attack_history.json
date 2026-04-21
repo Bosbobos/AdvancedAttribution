@@ -1,0 +1,552 @@
+{
+  "aggregate_history": {
+    "best_confidence": [
+      0.004294103942811489,
+      8.840457667247392e-06,
+      1.484625790360017e-11,
+      3.067828380654697e-13,
+      8.656448869076138e-15,
+      3.740806860624085e-17,
+      4.678069289481129e-19,
+      2.5991055284530356e-20,
+      2.120549242445851e-22,
+      1.585978975309153e-23
+    ],
+    "mean_target_logit_drop": [
+      14.491964340209961,
+      19.73538827896118,
+      23.083741188049316,
+      26.312840461730957,
+      29.701961994171143,
+      32.74980878829956,
+      35.53374433517456,
+      37.933566093444824,
+      40.64266586303711,
+      43.01426124572754
+    ],
+    "worst_confidence": [
+      5.295000664773397e-05,
+      3.3037858315765334e-07,
+      2.5196407182903613e-09,
+      3.912151418788978e-12,
+      9.565551204859107e-14,
+      2.1823568834364185e-15,
+      4.381180974105077e-17,
+      2.281276499975108e-19,
+      9.036217138963741e-21,
+      1.69155115740405e-22
+    ]
+  },
+  "best_image_paths": [
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/best/ILSVRC2012_val_00000293.png",
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/best/ILSVRC2012_val_00002138.png",
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/best/ILSVRC2012_val_00003014.png",
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/best/ILSVRC2012_val_00006697.png"
+  ],
+  "best_steps": [
+    10,
+    10,
+    10,
+    10
+  ],
+  "best_target_logit_drops": [
+    38.014862060546875,
+    46.31439208984375,
+    42.14380645751953,
+    45.583984375
+  ],
+  "best_target_logits": [
+    -25.507526397705078,
+    -32.69207000732422,
+    -29.714969635009766,
+    -25.17865753173828
+  ],
+  "best_target_probabilities": [
+    1.69155115740405e-22,
+    1.585978975309153e-23,
+    4.915999407784783e-22,
+    5.881363368942278e-20
+  ],
+  "chunk_results": null,
+  "clean_target_logits": [
+    12.507333755493164,
+    13.622322082519531,
+    12.428838729858398,
+    20.40532684326172
+  ],
+  "clean_target_probabilities": [
+    0.4578433036804199,
+    0.5649992823600769,
+    0.6739006042480469,
+    0.9991475343704224
+  ],
+  "config": {
+    "attack_steps": 10,
+    "baseline_mode": "zero",
+    "batch_size": 4,
+    "best_dir": "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/best",
+    "dim_prob": 0.7,
+    "dim_resize_high": 1.1,
+    "dim_resize_low": 1.0,
+    "epsilon": 0.06274509803921569,
+    "f_neg": "identity",
+    "f_pos": "identity",
+    "fallback_to_cpu_for_attribution": true,
+    "fill_mode": "zero",
+    "fill_rho": 0.8,
+    "force_device": null,
+    "gamma": 1.0,
+    "ia_steps": 30,
+    "image_size": 224,
+    "latest_dir": "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/latest",
+    "layer_name": "model.6",
+    "live_plots": true,
+    "momentum": 1.0,
+    "output_dir": "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig",
+    "pim_amplification": 2.5,
+    "pim_kernel_size": 3,
+    "save_best": true,
+    "save_history_json": true,
+    "save_latest": true,
+    "segment_end": 0.1,
+    "segment_start": 0.0,
+    "selection_mode": "signed",
+    "selection_top_k": 8000,
+    "step_size": 0.006274509803921569,
+    "top_n_preview": 5,
+    "variant": "base",
+    "verbose": true,
+    "weights_path": "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/weights/yolo11s-cls.pt"
+  },
+  "device": "mps",
+  "final_target_logit_drops": [
+    38.014862060546875,
+    46.31439208984375,
+    42.14380645751953,
+    45.583984375
+  ],
+  "final_target_logits": [
+    -25.507526397705078,
+    -32.69207000732422,
+    -29.714969635009766,
+    -25.17865753173828
+  ],
+  "final_target_probabilities": [
+    1.69155115740405e-22,
+    1.585978975309153e-23,
+    4.915999407784783e-22,
+    5.881363368942278e-20
+  ],
+  "history": [
+    {
+      "attack_loss": 3.699103355407715,
+      "best_confidence": 0.004294103942811489,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 14.491964340209961,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 1,
+      "surrogate_attr_mean_abs": 0.0010790402302518487,
+      "target_confidence_per_sample": [
+        3.8714077277290926e-07,
+        5.574551323661581e-06,
+        5.295000664773397e-05,
+        0.004294103942811489
+      ],
+      "target_logit_drop_per_sample": [
+        14.25178050994873,
+        15.592608451843262,
+        11.653434753417969,
+        16.470033645629883
+      ],
+      "worst_confidence": 5.295000664773397e-05
+    },
+    {
+      "attack_loss": -1.985246181488037,
+      "best_confidence": 8.840457667247392e-06,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 19.73538827896118,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 2,
+      "surrogate_attr_mean_abs": 0.0008632504031993449,
+      "target_confidence_per_sample": [
+        1.1124946297513816e-08,
+        1.2236887059202672e-08,
+        3.3037858315765334e-07,
+        8.840457667247392e-06
+      ],
+      "target_logit_drop_per_sample": [
+        18.94011688232422,
+        21.064319610595703,
+        16.97913932800293,
+        21.957977294921875
+      ],
+      "worst_confidence": 3.3037858315765334e-07
+    },
+    {
+      "attack_loss": -3.7855629920959473,
+      "best_confidence": 1.484625790360017e-11,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 23.083741188049316,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 3,
+      "surrogate_attr_mean_abs": 0.0008631900418549776,
+      "target_confidence_per_sample": [
+        1.9672262430159293e-10,
+        1.484625790360017e-11,
+        2.5196407182903613e-09,
+        1.5457038671229384e-06
+      ],
+      "target_logit_drop_per_sample": [
+        21.88140106201172,
+        25.93267059326172,
+        20.8370361328125,
+        23.683856964111328
+      ],
+      "worst_confidence": 2.5196407182903613e-09
+    },
+    {
+      "attack_loss": -4.32742977142334,
+      "best_confidence": 3.067828380654697e-13,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 26.312840461730957,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 4,
+      "surrogate_attr_mean_abs": 0.0008829378639347851,
+      "target_confidence_per_sample": [
+        3.912151418788978e-12,
+        3.067828380654697e-13,
+        1.1391314974629196e-10,
+        2.254652242683619e-09
+      ],
+      "target_logit_drop_per_sample": [
+        23.640949249267578,
+        29.315715789794922,
+        23.714677810668945,
+        28.580018997192383
+      ],
+      "worst_confidence": 3.912151418788978e-12
+    },
+    {
+      "attack_loss": -5.376347541809082,
+      "best_confidence": 8.656448869076138e-15,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 29.701961994171143,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 5,
+      "surrogate_attr_mean_abs": 0.0009343085112050176,
+      "target_confidence_per_sample": [
+        9.565551204859107e-14,
+        8.656448869076138e-15,
+        3.649614790067479e-13,
+        1.2729051319937401e-11
+      ],
+      "target_logit_drop_per_sample": [
+        26.794050216674805,
+        32.321014404296875,
+        27.601821899414062,
+        32.09096145629883
+      ],
+      "worst_confidence": 9.565551204859107e-14
+    },
+    {
+      "attack_loss": -6.545588493347168,
+      "best_confidence": 3.740806860624085e-17,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 32.74980878829956,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 6,
+      "surrogate_attr_mean_abs": 0.0010086431866511703,
+      "target_confidence_per_sample": [
+        2.1823568834364185e-15,
+        3.740806860624085e-17,
+        2.430539358102765e-14,
+        4.914520938641143e-13
+      ],
+      "target_logit_drop_per_sample": [
+        29.153654098510742,
+        36.35369110107422,
+        30.452064514160156,
+        35.039825439453125
+      ],
+      "worst_confidence": 2.1823568834364185e-15
+    },
+    {
+      "attack_loss": -7.855313777923584,
+      "best_confidence": 4.678069289481129e-19,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 35.53374433517456,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 7,
+      "surrogate_attr_mean_abs": 0.001096043037250638,
+      "target_confidence_per_sample": [
+        4.381180974105077e-17,
+        4.678069289481129e-19,
+        1.4092346547309891e-16,
+        3.616000592487553e-15
+      ],
+      "target_logit_drop_per_sample": [
+        30.81856346130371,
+        39.10118103027344,
+        33.912628173828125,
+        38.30260467529297
+      ],
+      "worst_confidence": 4.381180974105077e-17
+    },
+    {
+      "attack_loss": -9.70876693725586,
+      "best_confidence": 2.5991055284530356e-20,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 37.933566093444824,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 8,
+      "surrogate_attr_mean_abs": 0.0011501848930492997,
+      "target_confidence_per_sample": [
+        2.281276499975108e-19,
+        2.5991055284530356e-20,
+        5.997245556647275e-18,
+        8.367817971846042e-17
+      ],
+      "target_logit_drop_per_sample": [
+        33.283348083496094,
+        41.446678161621094,
+        36.14479064941406,
+        40.85944747924805
+      ],
+      "worst_confidence": 2.281276499975108e-19
+    },
+    {
+      "attack_loss": -11.141826629638672,
+      "best_confidence": 2.120549242445851e-22,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 40.64266586303711,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 9,
+      "surrogate_attr_mean_abs": 0.0011889591114595532,
+      "target_confidence_per_sample": [
+        9.036217138963741e-21,
+        2.120549242445851e-22,
+        6.852085505608685e-21,
+        2.9738030172488308e-18
+      ],
+      "target_logit_drop_per_sample": [
+        35.17868423461914,
+        44.247493743896484,
+        39.8590087890625,
+        43.28547668457031
+      ],
+      "worst_confidence": 9.036217138963741e-21
+    },
+    {
+      "attack_loss": -12.061103820800781,
+      "best_confidence": 1.585978975309153e-23,
+      "fill_betas": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_target_logit_drop": 43.01426124572754,
+      "selected_negative_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "selected_positive_counts": [
+        8000,
+        8000,
+        8000,
+        8000
+      ],
+      "step": 10,
+      "surrogate_attr_mean_abs": 0.0012665390968322754,
+      "target_confidence_per_sample": [
+        1.69155115740405e-22,
+        1.585978975309153e-23,
+        4.915999407784783e-22,
+        5.881363368942278e-20
+      ],
+      "target_logit_drop_per_sample": [
+        38.014862060546875,
+        46.31439208984375,
+        42.14380645751953,
+        45.583984375
+      ],
+      "worst_confidence": 1.69155115740405e-22
+    }
+  ],
+  "image_paths": [
+    "/Users/ashentide/Documents/Datasets/imagenet_val/n01440764/ILSVRC2012_val_00000293.JPEG",
+    "/Users/ashentide/Documents/Datasets/imagenet_val/n01440764/ILSVRC2012_val_00002138.JPEG",
+    "/Users/ashentide/Documents/Datasets/imagenet_val/n01440764/ILSVRC2012_val_00003014.JPEG",
+    "/Users/ashentide/Documents/Datasets/imagenet_val/n01440764/ILSVRC2012_val_00006697.JPEG"
+  ],
+  "latest_image_paths": [
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/latest/ILSVRC2012_val_00000293.png",
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/latest/ILSVRC2012_val_00002138.png",
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/latest/ILSVRC2012_val_00003014.png",
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare_batch/cheap_ig/latest/ILSVRC2012_val_00006697.png"
+  ],
+  "sample_ids": [
+    "ILSVRC2012_val_00000293",
+    "ILSVRC2012_val_00002138",
+    "ILSVRC2012_val_00003014",
+    "ILSVRC2012_val_00006697"
+  ],
+  "target_classes": [
+    0,
+    0,
+    693,
+    0
+  ],
+  "target_names": [
+    "tench",
+    "tench",
+    "paddle",
+    "tench"
+  ]
+}

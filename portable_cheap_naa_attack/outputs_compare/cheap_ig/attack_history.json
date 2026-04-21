@@ -1,0 +1,357 @@
+{
+  "aggregate_history": {
+    "best_confidence": [
+      8.204555683732906e-07,
+      3.228558398404857e-08,
+      1.1691005497027618e-08,
+      9.413444246320068e-09,
+      6.115062678446748e-09,
+      5.896985122433307e-09,
+      3.908117829354296e-09,
+      3.816591487293408e-09,
+      2.884485539311754e-09,
+      2.728290260378685e-09
+    ],
+    "mean_target_logit_drop": [
+      13.244056701660156,
+      15.97769832611084,
+      17.764602661132812,
+      18.410776138305664,
+      19.017642974853516,
+      19.28569984436035,
+      19.607091903686523,
+      19.736312866210938,
+      19.941606521606445,
+      19.988849639892578
+    ],
+    "worst_confidence": [
+      8.204555683732906e-07,
+      3.228558398404857e-08,
+      1.1691005497027618e-08,
+      9.413444246320068e-09,
+      6.115062678446748e-09,
+      5.896985122433307e-09,
+      3.908117829354296e-09,
+      3.816591487293408e-09,
+      2.884485539311754e-09,
+      2.728290260378685e-09
+    ]
+  },
+  "best_image_paths": [
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare/cheap_ig/best/best_adv.png"
+  ],
+  "best_steps": [
+    10
+  ],
+  "best_target_logit_drops": [
+    19.988849639892578
+  ],
+  "best_target_logits": [
+    -7.481513500213623
+  ],
+  "best_target_probabilities": [
+    2.728290260378685e-09
+  ],
+  "chunk_results": null,
+  "clean_target_logits": [
+    12.507335662841797
+  ],
+  "clean_target_probabilities": [
+    0.45784392952919006
+  ],
+  "config": {
+    "attack_steps": 10,
+    "baseline_mode": "zero",
+    "batch_size": 0,
+    "best_dir": "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare/cheap_ig/best",
+    "dim_prob": 0.7,
+    "dim_resize_high": 1.1,
+    "dim_resize_low": 1.0,
+    "epsilon": 0.00392156862745098,
+    "f_neg": "identity",
+    "f_pos": "identity",
+    "fallback_to_cpu_for_attribution": true,
+    "fill_mode": "zero",
+    "fill_rho": 0.8,
+    "force_device": null,
+    "gamma": 1.0,
+    "ia_steps": 30,
+    "image_size": 224,
+    "latest_dir": "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare/cheap_ig/latest",
+    "layer_name": "model.6",
+    "live_plots": true,
+    "momentum": 1.0,
+    "output_dir": "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare/cheap_ig",
+    "pim_amplification": 2.5,
+    "pim_kernel_size": 3,
+    "save_best": true,
+    "save_history_json": true,
+    "save_latest": true,
+    "segment_end": 0.1,
+    "segment_start": 0.0,
+    "selection_mode": "signed",
+    "selection_top_k": 8000,
+    "step_size": 0.006274509803921569,
+    "top_n_preview": 5,
+    "variant": "base",
+    "verbose": true,
+    "weights_path": "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/weights/yolo11s-cls.pt"
+  },
+  "device": "mps",
+  "final_target_logit_drops": [
+    19.988849639892578
+  ],
+  "final_target_logits": [
+    -7.481513500213623
+  ],
+  "final_target_probabilities": [
+    2.728290260378685e-09
+  ],
+  "history": [
+    {
+      "attack_loss": 3.156036376953125,
+      "best_confidence": 8.204555683732906e-07,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 13.244056701660156,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 1,
+      "surrogate_attr_mean_abs": 0.0010495823808014393,
+      "target_confidence_per_sample": [
+        8.204555683732906e-07
+      ],
+      "target_logit_drop_per_sample": [
+        13.244056701660156
+      ],
+      "worst_confidence": 8.204555683732906e-07
+    },
+    {
+      "attack_loss": -2.29608154296875,
+      "best_confidence": 3.228558398404857e-08,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 15.97769832611084,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 2,
+      "surrogate_attr_mean_abs": 0.0010035139275714755,
+      "target_confidence_per_sample": [
+        3.228558398404857e-08
+      ],
+      "target_logit_drop_per_sample": [
+        15.97769832611084
+      ],
+      "worst_confidence": 3.228558398404857e-08
+    },
+    {
+      "attack_loss": -4.23834228515625,
+      "best_confidence": 1.1691005497027618e-08,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 17.764602661132812,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 3,
+      "surrogate_attr_mean_abs": 0.0010123930405825377,
+      "target_confidence_per_sample": [
+        1.1691005497027618e-08
+      ],
+      "target_logit_drop_per_sample": [
+        17.764602661132812
+      ],
+      "worst_confidence": 1.1691005497027618e-08
+    },
+    {
+      "attack_loss": -5.583274841308594,
+      "best_confidence": 9.413444246320068e-09,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 18.410776138305664,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 4,
+      "surrogate_attr_mean_abs": 0.0010369403753429651,
+      "target_confidence_per_sample": [
+        9.413444246320068e-09
+      ],
+      "target_logit_drop_per_sample": [
+        18.410776138305664
+      ],
+      "worst_confidence": 9.413444246320068e-09
+    },
+    {
+      "attack_loss": -6.309734344482422,
+      "best_confidence": 6.115062678446748e-09,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 19.017642974853516,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 5,
+      "surrogate_attr_mean_abs": 0.0010518870549276471,
+      "target_confidence_per_sample": [
+        6.115062678446748e-09
+      ],
+      "target_logit_drop_per_sample": [
+        19.017642974853516
+      ],
+      "worst_confidence": 6.115062678446748e-09
+    },
+    {
+      "attack_loss": -6.8856201171875,
+      "best_confidence": 5.896985122433307e-09,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 19.28569984436035,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 6,
+      "surrogate_attr_mean_abs": 0.001059735077433288,
+      "target_confidence_per_sample": [
+        5.896985122433307e-09
+      ],
+      "target_logit_drop_per_sample": [
+        19.28569984436035
+      ],
+      "worst_confidence": 5.896985122433307e-09
+    },
+    {
+      "attack_loss": -7.145896911621094,
+      "best_confidence": 3.908117829354296e-09,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 19.607091903686523,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 7,
+      "surrogate_attr_mean_abs": 0.0010726124746724963,
+      "target_confidence_per_sample": [
+        3.908117829354296e-09
+      ],
+      "target_logit_drop_per_sample": [
+        19.607091903686523
+      ],
+      "worst_confidence": 3.908117829354296e-09
+    },
+    {
+      "attack_loss": -7.425628662109375,
+      "best_confidence": 3.816591487293408e-09,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 19.736312866210938,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 8,
+      "surrogate_attr_mean_abs": 0.0010766900377348065,
+      "target_confidence_per_sample": [
+        3.816591487293408e-09
+      ],
+      "target_logit_drop_per_sample": [
+        19.736312866210938
+      ],
+      "worst_confidence": 3.816591487293408e-09
+    },
+    {
+      "attack_loss": -7.599464416503906,
+      "best_confidence": 2.884485539311754e-09,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 19.941606521606445,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 9,
+      "surrogate_attr_mean_abs": 0.0010841592447832227,
+      "target_confidence_per_sample": [
+        2.884485539311754e-09
+      ],
+      "target_logit_drop_per_sample": [
+        19.941606521606445
+      ],
+      "worst_confidence": 2.884485539311754e-09
+    },
+    {
+      "attack_loss": -7.785070419311523,
+      "best_confidence": 2.728290260378685e-09,
+      "fill_betas": [
+        0.0
+      ],
+      "mean_target_logit_drop": 19.988849639892578,
+      "selected_negative_counts": [
+        8000
+      ],
+      "selected_positive_counts": [
+        8000
+      ],
+      "step": 10,
+      "surrogate_attr_mean_abs": 0.0010932645527645946,
+      "target_confidence_per_sample": [
+        2.728290260378685e-09
+      ],
+      "target_logit_drop_per_sample": [
+        19.988849639892578
+      ],
+      "worst_confidence": 2.728290260378685e-09
+    }
+  ],
+  "image_paths": [
+    "/Users/ashentide/Documents/Datasets/imagenet_val/n01440764/ILSVRC2012_val_00000293.JPEG"
+  ],
+  "latest_image_paths": [
+    "/Users/ashentide/PycharmProjects/PaperImplementations/portable_cheap_naa_attack/outputs_compare/cheap_ig/latest/latest_adv.png"
+  ],
+  "sample_ids": [
+    "ILSVRC2012_val_00000293"
+  ],
+  "target_classes": [
+    0
+  ],
+  "target_names": [
+    "tench"
+  ]
+}
