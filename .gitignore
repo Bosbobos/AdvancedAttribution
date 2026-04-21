@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Кэши/артефакты проекта
+output/
+cache_conductance_compare/
+results_conductance_compare/
+
+# Датасеты/модели
+data/
+oxford_pets/
+imagenet_val/
+*.pt
