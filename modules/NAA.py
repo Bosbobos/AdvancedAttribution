@@ -621,7 +621,7 @@ if __name__ == "__main__":
     # %% [markdown]
     # ## Эксперименты с ковариацией вынесены в отдельный ноутбук
     # 
-    # Весь блок с zero-covariance diagnostics, segmented covariance analysis и regression benchmark перенесён в `[Benchmarks/ImprovingAdvTransViaAttrib_covariance.ipynb](Benchmarks/ImprovingAdvTransViaAttrib_covariance.ipynb)`.
+    # Весь блок с zero-covariance diagnostics, segmented covariance analysis и regression benchmark перенесён в `[Experiments/ImprovingAdvTransViaAttrib_covariance.ipynb](Experiments/ImprovingAdvTransViaAttrib_covariance.ipynb)`.
     # 
     # Здесь оставлен только основной attribution pipeline из статьи, чтобы ноутбук не разрастался дальше.
     # 
